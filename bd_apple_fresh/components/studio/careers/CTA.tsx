@@ -1,5 +1,0 @@
-"use client";
-import { ArrowRight, Mail } from "lucide-react";
-export default function CTA(){
-  return <section className="bg-[#f5f5f7] px-5 pb-28"><div className="mx-auto max-w-7xl"><div className="relative overflow-hidden rounded-[2.8rem] bg-[#1d1d1f] p-8 text-white md:p-14"><div className="grid gap-10 lg:grid-cols-[1fr_.75fr] lg:items-center"><div><p className="text-sm font-semibold uppercase tracking-[.28em] text-[#0066cc]">Ready to build something meaningful?</p><h2 className="mt-5 text-5xl font-semibold leading-none tracking-[-.06em] md:text-7xl">We&apos;re always looking for passionate people.</h2></div><div className="grid gap-3"><a href="mailto:careers@beingdigitals.com" className="group flex items-center justify-between rounded-full bg-[#0066cc] px-7 py-4 font-semibold text-[#000000]">Apply Now<ArrowRight size={18} className="-rotate-45 transition group-hover:rotate-0"/></a><a href="mailto:careers@beingdigitals.com" className="flex items-center justify-center gap-2 rounded-full border border-white/15 px-7 py-4 font-semibold"><Mail size={18}/>careers@beingdigitals.com</a></div></div></div></div></section>
-}
