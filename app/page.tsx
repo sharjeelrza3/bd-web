@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import AppleHome from "@/components/apple2026/AppleHome";
+import PerformanceHomePage from "@/components/performance/HomePage";
 
 export const metadata: Metadata = {
   title: { absolute: "Being Digitals — Websites, Software & Growth" },
@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <AppleHome />
+      <PerformanceHomePage />
       <Footer />
     </>
   );

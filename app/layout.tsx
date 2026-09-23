@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Analytics from "@/components/analytics/Analytics";
 import SiteJsonLd from "@/components/seo/SiteJsonLd";
 import "./globals.css";
+import "./performance.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://beingdigitals.com"),
