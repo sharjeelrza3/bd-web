@@ -1,21 +1,15 @@
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import AppleServicePage from "@/components/apple2026/AppleServicePage";
+import PerformanceServicePage from "@/components/performance/ServicePage";
 import { serviceData } from "@/components/apple/services/serviceData";
 
 export const metadata: Metadata = {
-  title: 'Google Ads Management Services',
-  description: 'Google Ads campaign management including search ads, keyword strategy, conversion tracking and performance optimization.',
-  alternates: { canonical: '/services/google-ads' },
+  title: "Google Ads Management",
+  description: "Google Ads campaigns built around qualified search intent, conversion tracking and disciplined ongoing optimization.",
+  alternates: { canonical: "/services/google-ads" },
 };
 
 export default function Page() {
-  return (
-    <>
-      <Header />
-      <AppleServicePage data={serviceData.google} />
-      <Footer />
-    </>
-  );
+  return <><Header /><PerformanceServicePage data={serviceData.google} /><Footer /></>;
 }
