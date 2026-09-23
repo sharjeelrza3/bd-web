@@ -1,0 +1,61 @@
+import { HeartPulse, Sparkles, Target, UtensilsCrossed } from "lucide-react";
+
+export const projects = [
+  {
+    slug: "taste-of-karachi",
+    title: "Taste of Karachi",
+    category: "Restaurant Website",
+    location: "USA",
+    year: "2026",
+    description: "A premium restaurant platform for menu discovery, reservations and online ordering.",
+    desktop: "/images/portfolio/tasteofkarachi-wm.webp",
+    mobile: "/images/portfolio/mobile.jpg",
+    icon: UtensilsCrossed,
+    services: ["Strategy", "UI/UX", "Development", "SEO"],
+  },
+  {
+    slug: "the-pest-zone",
+    title: "The Pest Zone",
+    category: "Service Website",
+    location: "Karachi",
+    year: "2026",
+    description: "A conversion-focused local service website designed to improve trust and lead generation.",
+    desktop: "/images/portfolio/pestzone-wm.webp",
+    mobile: "/images/portfolio/mobile.jpg",
+    icon: Target,
+    services: ["Website", "Local SEO", "Content", "Lead UX"],
+  },
+  {
+    slug: "nazar-medical",
+    title: "Nazar Medical HMS",
+    category: "Healthcare Software",
+    location: "Pakistan",
+    year: "2026",
+    description: "A practical hospital workflow connecting OPD, pharmacy, billing and reporting.",
+    desktop: "/images/services/softwares/restaurant-pos.png",
+    mobile: "/images/portfolio/mobile.jpg",
+    icon: HeartPulse,
+    services: ["Product Strategy", "UI System", "Development", "QA"],
+  },
+  {
+    slug: "being-digitals",
+    title: "Being Digitals",
+    category: "Agency Platform",
+    location: "Global",
+    year: "2026",
+    description: "A premium digital studio experience connecting services, work and lead conversion.",
+    desktop: "/images/portfolio/websites.webp",
+    mobile: "/images/portfolio/mobile.jpg",
+    icon: Sparkles,
+    services: ["Brand Strategy", "UI/UX", "Next.js", "Motion"],
+  },
+];
+
+export const moreProjects = [
+  ["M-One Targets", "Ecommerce & SEO"],
+  ["Restaurant POS", "Business Software"],
+  ["AURA Portal", "University Platform"],
+  ["Vice City Farmhouse", "Hospitality Brand"],
+  ["SARSS Fragrance", "Luxury Ecommerce"],
+  ["Electronics ERP", "Retail System"],
+];

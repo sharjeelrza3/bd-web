@@ -1,0 +1,7 @@
+import { Clapperboard, Film, Layers3, Sparkles, WandSparkles } from "lucide-react";
+const steps=[["01","Concept","Define story and message.",Sparkles],["02","Storyboard","Plan scenes and rhythm.",Layers3],["03","Production","Capture and assemble.",Clapperboard],["04","Motion","Add transitions and animation.",WandSparkles],["05","Final Cut","Refine sound and pacing.",Film]];
+export default function CreativeProcess(){
+ return <section className="px-5 py-28"><div className="mx-auto max-w-7xl"><div className="mx-auto max-w-4xl text-center"><p className="text-sm font-semibold uppercase tracking-[.28em] text-[#0066cc]">Creative Process</p><h2 className="mt-4 text-5xl font-semibold leading-none tracking-[-.06em] md:text-7xl">Every strong reel starts with a clear story.</h2></div>
+ <div className="relative mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-5"><div className="absolute left-[8%] right-[8%] top-8 hidden h-px bg-white/10 lg:block"/>{steps.map(([n,t,d,I])=>{const Icon=I as typeof Film;return <article key={n as string} className="relative text-center"><span className="relative z-10 mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#0066cc] text-[#000000]"><Icon size={22}/></span><p className="mt-5 text-xs font-semibold text-[#0066cc]">{n as string}</p><h3 className="mt-2 text-xl font-semibold">{t as string}</h3><p className="mt-3 text-sm font-semibold text-white/40">{d as string}</p></article>})}</div>
+ </div></section>
+}

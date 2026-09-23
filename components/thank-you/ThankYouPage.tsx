@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { ArrowRight, Check } from "lucide-react";
+
+export default function ThankYouPage() {
+  return <main className="min-h-[75svh] bg-white pt-[58px] text-[#1d1d1f]"><section className="px-5 py-28 text-center md:px-8 md:py-40"><div className="mx-auto max-w-[960px]"><span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-black text-white"><Check size={25}/></span><p className="mt-7 text-[15px] font-semibold text-[#6e6e73]">Project brief received</p><h1 className="mt-3 text-[clamp(4rem,9vw,8.8rem)] font-semibold leading-[.87] tracking-[-.073em]">Thanks. We have it.</h1><p className="mx-auto mt-7 max-w-2xl text-[18px] font-semibold leading-[1.5] text-black/43">We’ll review the brief and use the details to shape the next conversation.</p><div className="mt-9 flex flex-wrap justify-center gap-3"><Link href="/portfolio" className="inline-flex min-h-12 items-center gap-2 rounded-full bg-[#0071e3] px-6 text-[15px] font-semibold text-white">Explore our work <ArrowRight size={16}/></Link><Link href="/" className="inline-flex min-h-12 items-center rounded-full border border-black/10 px-6 text-[15px] font-semibold">Back home</Link></div></div></section></main>;
+}
