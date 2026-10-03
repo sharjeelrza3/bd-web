@@ -1,0 +1,80 @@
+.marqueeMask {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  animation: referenceMarquee 30s linear infinite;
+  will-change: transform;
+}
+
+.marqueeReverse {
+  animation-direction: reverse;
+  animation-duration: 36s;
+}
+
+.marqueeMask:hover .marqueeTrack {
+  animation-play-state: paused;
+}
+
+.terminalLine {
+  opacity: 0;
+  transform: translateY(5px);
+  animation: terminalLineIn .35s cubic-bezier(.16, 1, .3, 1) forwards;
+}
+
+.cursor {
+  display: inline-block;
+  width: 7px;
+  height: 14px;
+  margin-left: 4px;
+  vertical-align: -2px;
+  background: currentColor;
+  animation: terminalBlink 1s steps(1, end) infinite;
+}
+
+.deviceGlow {
+  animation: deviceGlow 3.6s ease-in-out infinite;
+}
+
+.projectCard {
+  transition: transform .6s cubic-bezier(.16, 1, .3, 1), box-shadow .6s cubic-bezier(.16, 1, .3, 1);
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 32px 90px rgba(0,0,0,.13);
+}
+
+@keyframes referenceMarquee {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes terminalLineIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes terminalBlink {
+  0%, 45% { opacity: 1; }
+  46%, 100% { opacity: 0; }
+}
+
+@keyframes deviceGlow {
+  0%, 100% { opacity: .45; transform: scale(.96); }
+  50% { opacity: .9; transform: scale(1.04); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marqueeTrack,
+  .terminalLine,
+  .cursor,
+  .deviceGlow {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}
